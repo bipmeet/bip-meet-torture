@@ -598,6 +598,20 @@ public class WebParticipant extends Participant<WebDriver>
         actions.perform();
     }
 
+    public  void moveToElement(){
+        //Move and find specified element
+
+        WebDriver driver = getDriver();
+
+        WebElement localVideoContainerElem
+                = driver.findElement(By.xpath(
+                "//span[@id='localVideoContainer']"));
+
+        Actions action = new Actions(driver);
+        action.moveToElement(localVideoContainerElem);
+        action.build().perform();
+    }
+
     /**
      * @return a representation of the chat panel of this participant.
      */

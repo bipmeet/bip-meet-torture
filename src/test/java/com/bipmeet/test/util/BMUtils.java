@@ -25,7 +25,7 @@ public class BMUtils {
     public static void clickContinueOnBrowserButton(Participant participant) {
 
         // Do this action only on bip-meet platform
-        if(participant.getMeetUrl().getServerUrl().contains(BIPMEET_SERVER_URL) == false) {
+        if(!participant.getMeetUrl().getServerUrl().contains(BIPMEET_SERVER_URL)) {
             return;
         }
 

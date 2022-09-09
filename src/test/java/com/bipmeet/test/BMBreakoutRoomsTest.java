@@ -304,10 +304,10 @@ public class BMBreakoutRoomsTest extends BreakoutRoomsTest
         // so the previous breakout rooms would still be there.
         // To avoid this issue we use a different meeting
         JitsiMeetUrl url = getJitsiMeetUrl()
-                .setRoomName("lnuc-wty-vjj")
+                .setRoomName("pjtv-idg-gpv")
                 ;
         String secondToken =
-                "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJCaXBtZWV0X1NjaGVkdWxlZCIsInN1YiI6ImEyMDUwOWE0LTc5MjUtNGQ0OS05Y2YxLWJmNTU3YTY2YjE5OCIsImNvbnRleHQiOnsiZmVhdHVyZXMiOnsiZGlzYWJsZV9wcmVfam9pbl9zY3JlZW4iOnRydWUsImRpc2FibGVfbW9kaWZ5X3VzZXJuYW1lIjpmYWxzZSwiZGlzYWJsZV9kZXZpY2Vfc2VsZWN0aW9uIjp0cnVlLCJzY2hlZHVsZWRfcm9vbSI6dHJ1ZX0sInVzZXIiOnsibmFtZSI6Ik51bWFuIMOHQVZMSSIsImlkIjoiYTIwNTA5YTQtNzkyNS00ZDQ5LTljZjEtYmY1NTdhNjZiMTk4In19LCJpc3MiOiJiaXBfYXBwX2lkIiwidG9waWMiOiJFeGFtcGxlIFNjaGVkdWxlZCBNZWV0aW5nIiwiZXhwIjoxNjY0MDIyNjAwLCJpYXQiOjE2NjIxMTgzOTYsInJvb20iOiJbcHJwMDFdbG51Yy13dHktdmpqIn0.HT5UezP9mzBlhMYy7q2iJJxjBxgOwqdUVNeEvfLoN6s";
+                "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJCaXBtZWV0X1NjaGVkdWxlZCIsInN1YiI6IjUxODBlMWNkLTVhMDAtNDA0ZC1iMTUxLTJmZWJlODMzMDBmMSIsImNvbnRleHQiOnsiZmVhdHVyZXMiOnsiZGlzYWJsZV9wcmVfam9pbl9zY3JlZW4iOmZhbHNlLCJkaXNhYmxlX21vZGlmeV91c2VybmFtZSI6ZmFsc2UsImRpc2FibGVfZGV2aWNlX3NlbGVjdGlvbiI6ZmFsc2UsInNjaGVkdWxlZF9yb29tIjp0cnVlfSwidXNlciI6eyJuYW1lIjoiT3RvbWFzeW9uIEJpcG1lZXQiLCJpZCI6IjUxODBlMWNkLTVhMDAtNDA0ZC1iMTUxLTJmZWJlODMzMDBmMSJ9fSwiaXNzIjoiYmlwX2FwcF9pZCIsInRvcGljIjoiRXhhbXBsZSBTY2hlZHVsZWQgTWVldGluZyIsImV4cCI6MTY2OTI5MzAwMCwiaWF0IjoxNjYyNzIzNTQzLCJyb29tIjoiW3BycDAxXXBqdHYtaWRnLWdwdiJ9.cEmqq2Loi79PZPdyVsFQxpJPJHTT-F6JqqZOg_mOG2g";
         ensureTwoParticipants(url.copy().setRoomParameters("jwt=" + secondToken), url);
 
         ParticipantsPane pane = participant1.getParticipantsPane();

@@ -31,6 +31,7 @@ public class ModalDialogHelper
     private final static String CANCEL_BUTTON = "modal-dialog-cancel-button";
     private final static String OK_BUTTON = "modal-dialog-ok-button";
     private final static String CLOSE_BUTTON = "modal-header-close-button";
+    private final static String SEND_BUTTON = "modal-dialog-send-button";
 
     /**
      * Clicks on the ok button.
@@ -57,6 +58,11 @@ public class ModalDialogHelper
     public static void clickCloseButton(WebDriver driver)
     {
         TestUtils.click(driver, By.id(CLOSE_BUTTON));
+    }
+
+    public static void clickSendButton(WebDriver driver)
+    {
+        TestUtils.click(driver, By.id(SEND_BUTTON));
     }
 
 }
