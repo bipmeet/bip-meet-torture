@@ -162,7 +162,7 @@ public abstract class Participant<T extends WebDriver>
         this.meetUrl = meetURL;
         this.hungUp = false;
 
-         BMUtils.clickContinueOnBrowserButton(this);
+        BMUtils.clickContinueOnBrowserButton(this);
     }
 
     /**
