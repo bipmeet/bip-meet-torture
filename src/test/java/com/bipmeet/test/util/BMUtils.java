@@ -23,15 +23,10 @@ public class BMUtils {
      * @param participant
      */
     public static void clickContinueOnBrowserButton(Participant participant) {
-
-        // Do this action only on bip-meet platform
-        if(!participant.getMeetUrl().getServerUrl().contains(BIPMEET_SERVER_URL)) {
-            return;
-        }
-
+        
         WebDriver driver = participant.getDriver();
         TestUtils.click(driver,
-                By.xpath("//span[text()=\"Continue on this browser\"]")
+                By.xpath("(//div[@class='content']//div[@class='row'])[2]")
         );
     }
 
